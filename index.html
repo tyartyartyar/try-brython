@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython_stdlib.js" integrity="sha256-Gnrw9tIjrsXcZSCh/wos5Jrpn0bNVNFJuNJI9d71TDs=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <title>Brython Try</title>
+</head>
+<body onload="brython()">
+    <h1>Brython</h1>
+
+    <br>
+    <h2 id="hello"></h2>
+    <button id="alert-btn">Console, Alert & Insert</button>
+
+    <input type="text" id="text" placeholder="type something">
+    <br>
+    <span id="output"></span>
+
+    <br>
+    <h3 id="greet">Hello {name}</h3>
+
+    <br>
+    <button id="get_joke">Get Jokes</button>
+    <div id="joke" class="card">Click the "Get Jokes" button</div>
+
+    <br>
+    <input type="file" name="" id="file-upload"><br>
+    <textarea name="" id="file-read" cols="30" rows="10"></textarea>
+
+    <br>
+    <div class="card">
+      <button id="rotate-btn">Rotate</button>
+      <div class="box" id="rotate-box"></div>
+    </div>
+
+    <br>
+    <h2>Saved Item: <span id="item"></span></h2>
+    <input type="text" id="key-input" placeholder="Key to local storage">
+    <input type="text" id="value-input" placeholder="Value to local storage">
+    <br>
+    <button style="margin: 2px;display:inline;" id="add-btn">Add</button>
+    <button style="margin: 2px;display:inline;" id="remove-btn">Remove</button>
+
+    <!-- Console, Alert, DOM -->
+    <script type="text/python" id="script0" src="index.py"></script> 
+
+    <!-- Text bind -->
+    <script type="text/python" id="script1" src="index1.py"></script>
+
+    <!-- Template string -->
+    <script type="text/python" id="script2" src="index2.py"></script>
+
+    <!-- Ajax -->
+    <script type="text/python" id="script3" src="index3.py"></script>
+
+    <!-- File -->
+    <script type="text/python" id="script4" src="index4.py"></script>
+    
+    <!-- Style Manipulation -->
+    <script type="text/python" id="script5" src="index5.py"></script>
+    
+    <!-- Local Storage -->
+    <script type="text/python" id="script6" src="index6.py"></script>
+
+</body>
+</html>
